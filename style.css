@@ -1,0 +1,78 @@
+.game{
+    background-image:url('/fon.jpg') ;
+    width: 960px;
+    height: 540px;
+    margin: auto;
+    margin-top: 100px;}
+    .line{
+    width: 960px;
+    height: 5px;
+    border-bottom: 1px solid #6e488d94;
+    transform: translateY(500px);
+    
+}
+#din {
+    height: 80px;
+    width: 80px;
+     background-image: url(/dino.png) ;
+    background-size: 80px 80px; 
+    position: relative;
+    top: 416px;
+    
+    
+    
+}
+
+
+
+#cactus{
+    height: 85px;
+    width: 45px;
+    
+    background-image: url(/images/cactus.png)  ;
+    background-size: 40px 80px; 
+    position: relative;
+    transform: translateY(330px);
+    margin-left: 870px;
+    animation: cactusMov 1s infinite linear;
+    
+
+}
+@keyframes cactusMov {
+    0%{
+        margin-left: 870px;
+        
+    }
+    100%{
+        margin-left: -20px;
+    }
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+@keyframes jump {
+    0%{
+        /* top: 150px; */
+        top:416px;
+    }
+    30%{
+        
+        top:400px;
+    }
+    50%{
+        
+        top:205px;
+    }
+    80%{
+        
+        top:400px;
+    }
+    100%{
+        top:416px;
+        
+       
+    }
+
+    
+}
